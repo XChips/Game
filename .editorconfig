@@ -1,0 +1,17 @@
+# 编辑器配置
+
+root = true # 表示是最顶层的配置文件，发现为true时，才会停止查找.editorconfig文件
+
+[*]
+charset = utf-8 # 编码格式，可选值有latin1、utf-8（一般使用它）、utf-16be、utf-16le
+end_of_line = lf # 设置换行符格式，可选值lf(一般为它)、cr、crlf
+indent_size = 2 # 设置缩进空格数，一般为整数2或4
+indent_style = space # 设置缩进风格，可选值有制表符tab和空格space
+insert_final_newline = true # 保存文件时是否在文件的最后插入一个空行。可为true和false
+trim_trailing_whitespace = true # 是否删除行尾的空格，可为true和false
+tab_width = 2 # 设置tab类型的缩进列数，一般为整数2或4
+max_line_length = 140 # 每行最大长度
+
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false
